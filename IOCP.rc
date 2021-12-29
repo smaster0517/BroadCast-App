@@ -1,0 +1,333 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HEADER              BITMAP                  "res\\header.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IOCP_DIALOG DIALOGEX 0, 0, 537, 244
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Ade's Application - Server 1.0.0.0"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Hide",IDOK,479,218,50,14
+    CONTROL         "List1",IDC_CLIENTLIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,150,7,379,175,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ADRESS,55,23,91,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "Disconnect All ",IDC_DISCONNECTALL,94,104,52,12
+    PUSHBUTTON      "Disconnect",IDC_DISCONNECT,46,104,46,12
+    PUSHBUTTON      "Send ",IDC_SEND,3,104,41,12
+    EDITTEXT        IDC_SENDTXT,2,55,146,46,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_OEMCONVERT | ES_WANTRETURN
+    EDITTEXT        IDC_RECEIVEDTXT,38,120,104,15,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_OEMCONVERT | ES_READONLY
+    LTEXT           "Status:",IDC_STATIC,4,121,23,8
+    CONTROL         "Flood data to all. ",IDC_FLOOD,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,74,145,69,13
+    EDITTEXT        IDC_LOGG,2,184,527,32,ES_MULTILINE | ES_AUTOVSCROLL | ES_OEMCONVERT | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_MSGPERSEC,93,221,84,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT           "Package received/second:",IDC_STATIC,2,220,88,8
+    PUSHBUTTON      "Stop",IDC_STOPSTART,5,4,51,18
+    PUSHBUTTON      "Settings",IDC_Settings,104,3,42,18,WS_DISABLED
+    LTEXT           "SystemLog:",IDC_STATIC,2,173,38,8
+    LTEXT           "Server Adress:",IDC_STATIC,6,27,47,8
+    PUSHBUTTON      "Send and Play",IDC_SENDFILE,78,157,68,16
+    CONTROL         "Random Disconnect (10% probability) ",IDC_RANDOMDISCONNECT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,135,135,10
+    PUSHBUTTON      "Record",IDC_SENDFILE2,6,157,68,16
+    LTEXT           "Message:",IDC_STATIC,4,44,32,8
+END
+
+IDD_SETTINGS DIALOG 0, 0, 228, 223
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IOCP System Configuration "
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,165,200,56,14
+    LTEXT           "Port (-1= Client mode):",IDC_STATIC,7,10,88,10
+    EDITTEXT        IDC_PORTNR,102,6,120,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXNUMOFCONNECTION,102,23,119,14,ES_AUTOHSCROLL
+    LTEXT           "Maximum nr of connections :",IDC_STATIC,7,26,92,8
+    LTEXT           "Number of I/O workers       :",IDC_STATIC,7,43,89,8
+    EDITTEXT        IDC_NROFIOWORKERS,102,41,119,14,ES_AUTOHSCROLL
+    LTEXT           "Number of logical workers   :",IDC_STATIC,7,60,90,8
+    EDITTEXT        IDC_NROFLOGICWORKERS,102,59,119,14,ES_AUTOHSCROLL
+    LTEXT           "Max Number of unused Buffers  (0=infinte number)  :",IDC_STATIC,7,74,89,19
+    EDITTEXT        IDC_NROFFREEBUFF,102,77,119,14,ES_AUTOHSCROLL
+    LTEXT           "Max Number of unused Clients (0=infinte number) :",IDC_STATIC,7,94,93,17
+    EDITTEXT        IDC_NROFFREECONTEXT,102,95,119,14,ES_AUTOHSCROLL
+    CONTROL         "Make received packages ordered (TRUE if the sever use several pendling reads .  ",IDC_RECEIVEDORDERED,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,13,155,197,18
+    GROUPBOX        "Package ordering",IDC_STATIC,7,132,214,65
+    LTEXT           "Uncheck to increase the performance if you know that the order of the packages is not important. ",IDC_STATIC,11,177,196,16
+    CONTROL         "Make sending packages ordered. ",IDC_SENDORDERED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,143,136,10
+    EDITTEXT        IDC_NRPENDLINGREAD,102,114,119,14,ES_AUTOHSCROLL
+    LTEXT           "Number of pendling read loop:",IDC_STATIC,7,113,93,17
+END
+
+IDD_TESTAUDIO_DIALOG DIALOGEX 0, 0, 237, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Record & Play Audio"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,97,50,14
+    COMBOBOX        IDC_COMBO_DEVICES,41,7,116,47,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Devices :",IDC_STATIC,7,7,31,8
+    CONTROL         "Play",IDC_BUTTON_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,7,49,50,14
+    CONTROL         "Pause",IDC_BUTTON_PLAYPAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,65,49,50,14
+    CONTROL         "Continue",IDC_BUTTON_PLAYCONTINUE,"Button",BS_OWNERDRAW | WS_TABSTOP,123,49,50,14
+    CONTROL         "Record",IDC_BUTTON_RECORD,"Button",BS_OWNERDRAW | WS_TABSTOP,7,72,50,14
+    CONTROL         "Stop",IDC_BUTTON_PLAYSTOP,"Button",BS_OWNERDRAW | WS_TABSTOP,181,48,50,14
+    CONTROL         "Pause",IDC_BUTTON_RECPAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,66,72,50,14
+    CONTROL         "Continue",IDC_BUTTON_RECCONTINUE,"Button",BS_OWNERDRAW | WS_TABSTOP,124,72,50,14
+    CONTROL         "Stop",IDC_BUTTON_RECSTOP,"Button",BS_OWNERDRAW | WS_TABSTOP,182,72,50,14
+    LTEXT           "File:",IDC_STATIC,7,29,14,8
+    EDITTEXT        IDC_FILENAME,42,26,166,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_CHANGEFILE,211,26,19,14
+    EDITTEXT        IDC_EDITSTATUS,67,94,163,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Cancel",IDCANCEL,8,97,50,14,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_IOCP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 529
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_TESTAUDIO_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_IOCP_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TESTAUDIO_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_OKD                 BITMAP                  "res\\bmp00001.bmp"
+
+IDB_OKU                 BITMAP                  "res\\bmp00002.bmp"
+
+IDB_STRTU               BITMAP                  "res\\bmp00003.bmp"
+
+IDB_STRTX               BITMAP                  "res\\bmp00004.bmp"
+
+IDB_PLAYU               BITMAP                  "res\\playu.bmp"
+
+IDB_PLAYX               BITMAP                  "res\\playx.bmp"
+
+IDB_STRTD               BITMAP                  "res\\strtd.bmp"
+
+IDB_PLAYD               BITMAP                  "res\\bitmap1.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Ade's Server MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Ade's Server"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "Ade's Server.EXE"
+            VALUE "ProductName", "Ade's Server Application"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAY_MENU MENU
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "&Restore",                    ID_MENU_RESTORE
+        MENUITEM "E&xit",                       ID_MENU_EXIT
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish (Sweden) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+LANGUAGE LANG_SWEDISH, SUBLANG_SWEDISH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\IOCP.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IOCP.ico"
+
+#endif    // Swedish (Sweden) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\IOCP.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

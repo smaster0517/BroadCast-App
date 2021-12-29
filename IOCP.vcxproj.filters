@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47118cd2-0b12-45e3-b354-e16fefbd6b07}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c24bed2e-8d25-411b-9ce5-a1ad489a7b70}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0525d7e3-50c5-4ee1-b730-6b2c02b75d33}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Wave">
+      <UniqueIdentifier>{830d63b7-8570-49e3-a9b2-84d8b334791f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wave">
+      <UniqueIdentifier>{7117c710-183b-4f50-b9d3-37bf0c8dd9b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tray">
+      <UniqueIdentifier>{3f0b5f4b-c5a9-464c-a2f3-a357f9cad315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tray">
+      <UniqueIdentifier>{389039a9-674b-4b61-b810-d9685a4edd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TBalloon">
+      <UniqueIdentifier>{81aa1732-a04d-4714-8f5b-a62539d359fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TBalloon">
+      <UniqueIdentifier>{ae9c76a5-7bb6-4c1c-a1f9-9e721fd0688c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ImageButton">
+      <UniqueIdentifier>{ec4f7216-3bca-4cb5-a82e-2789fdd95207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ImageButton">
+      <UniqueIdentifier>{231b6006-b4df-4ff3-9ec9-fc8c7be18533}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HistoryEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPSettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyIOCP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave\DlgTestAudio.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave\Wave.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave\WaveBuffer.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave\WaveDevice.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave\WaveIn.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave\WaveInterface.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Wave\WaveOut.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Tray\trayicon.cpp">
+      <Filter>Source Files\Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="Balloon\Gradient.cpp">
+      <Filter>Source Files\TBalloon</Filter>
+    </ClCompile>
+    <ClCompile Include="Balloon\TBalloon.cpp">
+      <Filter>Source Files\TBalloon</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageButton\ImageTextButton.cpp">
+      <Filter>Source Files\ImageButton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IOCP.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HistoryEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPSettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyIOCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave\DlgTestAudio.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave\Wave.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave\WaveBuffer.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave\WaveDevice.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave\WaveIn.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave\WaveInterface.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Wave\WaveOut.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Tray\trayicon.h">
+      <Filter>Header Files\Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="Balloon\Gradient.h">
+      <Filter>Header Files\TBalloon</Filter>
+    </ClInclude>
+    <ClInclude Include="Balloon\TBalloon.h">
+      <Filter>Header Files\TBalloon</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageButton\ImageTextButton.h">
+      <Filter>Header Files\ImageButton</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\header.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IOCP.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00004.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\playu.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\playx.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\strtd.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\IOCP.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

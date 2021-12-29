@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IOCP", "IOCP.vcxproj", "{21491C55-2643-4363-892B-546408F31AD9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IOCPClient", "IOCPClient\IOCPClient.vcxproj", "{6D975777-D838-466A-ABAD-D0B3C1DE5562}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Template|x86 = Template|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21491C55-2643-4363-892B-546408F31AD9}.Debug|x86.ActiveCfg = Debug|Win32
+		{21491C55-2643-4363-892B-546408F31AD9}.Debug|x86.Build.0 = Debug|Win32
+		{21491C55-2643-4363-892B-546408F31AD9}.Release|x86.ActiveCfg = Release|Win32
+		{21491C55-2643-4363-892B-546408F31AD9}.Release|x86.Build.0 = Release|Win32
+		{21491C55-2643-4363-892B-546408F31AD9}.Template|x86.ActiveCfg = Release|Win32
+		{21491C55-2643-4363-892B-546408F31AD9}.Template|x86.Build.0 = Release|Win32
+		{6D975777-D838-466A-ABAD-D0B3C1DE5562}.Debug|x86.ActiveCfg = Debug|Win32
+		{6D975777-D838-466A-ABAD-D0B3C1DE5562}.Debug|x86.Build.0 = Debug|Win32
+		{6D975777-D838-466A-ABAD-D0B3C1DE5562}.Release|x86.ActiveCfg = Release|Win32
+		{6D975777-D838-466A-ABAD-D0B3C1DE5562}.Release|x86.Build.0 = Release|Win32
+		{6D975777-D838-466A-ABAD-D0B3C1DE5562}.Template|x86.ActiveCfg = Template|Win32
+		{6D975777-D838-466A-ABAD-D0B3C1DE5562}.Template|x86.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEAE93EF-DE11-43E4-9151-59EF3D2D936F}
+	EndGlobalSection
+EndGlobal

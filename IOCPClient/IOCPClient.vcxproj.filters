@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{adf25365-069f-43a8-9acd-3ce6dfcbbed4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f7093382-4c3e-454f-bab4-664a3874b75c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4f56a414-dfd7-425a-8dfb-e130b7c698e3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Wave">
+      <UniqueIdentifier>{901cef09-21c2-4456-bca3-902424434f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Wave">
+      <UniqueIdentifier>{bfd414a3-0a72-49d1-ac28-861c024ac124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tray">
+      <UniqueIdentifier>{4e4cf2fd-dcbd-41a5-a46b-6abc74b524b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tray">
+      <UniqueIdentifier>{dd3e4f21-36e6-45a8-8e6f-943247ee32dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TBalloon">
+      <UniqueIdentifier>{8b90a579-0f49-459b-8134-149ca0bb6cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TBalloon">
+      <UniqueIdentifier>{a15c6a68-94c3-4325-9e87-6ed97a302b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ini">
+      <UniqueIdentifier>{5ff23e5d-eda6-4a67-bd42-d53b19d21cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ini">
+      <UniqueIdentifier>{d215a01c-ec6f-4b52-bc92-6880ae522d3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HistoryEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPClientDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPSettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyIOCP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wave\Wave.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wave\WaveBuffer.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wave\WaveDevice.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wave\WaveIn.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wave\WaveInterface.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Wave\WaveOut.cpp">
+      <Filter>Source Files\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tray\trayicon.cpp">
+      <Filter>Source Files\Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Balloon\Gradient.cpp">
+      <Filter>Source Files\TBalloon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Balloon\TBalloon.cpp">
+      <Filter>Source Files\TBalloon</Filter>
+    </ClCompile>
+    <ClCompile Include="Ini\IniFile.cpp">
+      <Filter>Source Files\Ini</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IOCPClient.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HistoryEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPClientDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPSettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyIOCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wave\Wave.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wave\WaveBuffer.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wave\WaveDevice.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wave\WaveIn.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wave\WaveInterface.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Wave\WaveOut.h">
+      <Filter>Header Files\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tray\trayicon.h">
+      <Filter>Header Files\Tray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Balloon\Gradient.h">
+      <Filter>Header Files\TBalloon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Balloon\TBalloon.h">
+      <Filter>Header Files\TBalloon</Filter>
+    </ClInclude>
+    <ClInclude Include="Ini\IniFile.h">
+      <Filter>Header Files\Ini</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\header.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IOCPClient.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\IOCPClient.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
